@@ -49,22 +49,12 @@ from launch_ros.actions import Node  # noqa: E402
 CAMERAS = []
 CAMERAS.append(
     CameraConfig(
-        name='camera1',
-        namespace='camera1',
-        param_path=Path(USB_CAM_DIR, 'config', 'params_1.yaml'),
-        remappings=[('image_compressed', 'image_raw/compressed')]
-    )
-    # Add more Camera's here and they will automatically be launched below
-)
-CAMERAS.append(
-    CameraConfig(
         name='camera2',
-        namespace='camera2',
-        param_path=Path(USB_CAM_DIR, 'config', 'params_2.yaml'),
-        remappings=[('image_compressed', 'image_raw/compressed')]
+        param_path=Path(USB_CAM_DIR, 'config', 'params_2.yaml')
     )
     # Add more Camera's here and they will automatically be launched below
 )
+
 def generate_launch_description():
     ld = LaunchDescription()
 
