@@ -1,8 +1,8 @@
 /**:
   ros__parameters:
     namespace: "camera1"
-    video_device: "/dev/video0"
-    framerate: 30.0
+    video_device: "/dev/video2"
+    framerate: 15.0
     pixel_format: "mjpeg2rgb"
     io_method: "mmap"
     image_width: 640

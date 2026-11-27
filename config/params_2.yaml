@@ -1,7 +1,7 @@
 /**:
     ros__parameters:
       namespace: "camera2"
-      video_device: "/dev/video2"
+      video_device: "/dev/video0"
       framerate: 15.0
       io_method: "mmap"
       frame_id: "camera2"
